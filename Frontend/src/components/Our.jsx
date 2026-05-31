@@ -34,7 +34,7 @@ const projects = [
 
 const Our = () => {
   return (
-    <section className="py-20 md:py-28 bg-white overflow-hidden">
+    <section className="py-20 md:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
         {/* Heading */}
         <div className="text-center mb-14">
@@ -52,12 +52,12 @@ const Our = () => {
           </p>
         </div>
 
-        {/* Mobile Horizontal Slider */}
-        <div className="lg:hidden flex gap-5 overflow-x-auto snap-x snap-mandatory pb-6 -mx-5 px-5 sm:-mx-8 sm:px-8 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+        {/* Mobile Vertical Stack */}
+        <div className="lg:hidden flex flex-col gap-6">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="min-w-[85%] sm:min-w-[70%] h-[450px] snap-center relative overflow-hidden rounded-3xl flex-shrink-0 shadow-xl"
+              className="w-full h-[400px] sm:h-[450px] relative overflow-hidden rounded-3xl shadow-xl"
             >
               <img
                 src={project.image}
@@ -137,7 +137,7 @@ const Our = () => {
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-10 lg:mt-14">
+        <div className="text-center mt-12 lg:mt-14">
           <button className="bg-black text-white px-10 py-4 rounded-2xl font-medium hover:bg-neutral-800 transition-all duration-300">
             View All Projects
           </button>
