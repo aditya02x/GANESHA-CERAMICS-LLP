@@ -5,55 +5,58 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-[#050505] to-black text-white px-5 sm:px-8 md:px-16 lg:px-20 py-16 md:py-24 border-t border-white/10 overflow-hidden">
       
-      {/* Top Heading */}
-      <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-10 pb-14 md:pb-20 border-b border-white/10">
-        
-        <div className="w-full">
-          <p className="uppercase tracking-[0.25em] sm:tracking-[0.4em] text-[10px] sm:text-sm text-gray-500 mb-4">
-            Luxury Marble & Sanitary
-          </p>
-
-          <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight max-w-4xl">
-            Crafting Elegant
-            <span className="italic font-serif text-gray-300"> Spaces </span>
-            With Premium Marble.
-          </h2>
-        </div>
-
-        <button className="border border-white/20 px-6 sm:px-8 py-3 sm:py-4 uppercase tracking-[0.15em] sm:tracking-[0.25em] text-xs sm:text-sm hover:bg-white hover:text-black transition-all duration-500 rounded-full whitespace-nowrap">
-          Explore Collection
-        </button>
-      </div>
-
       {/* Footer Content */}
-      <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-14 md:gap-20 pt-14 md:pt-20 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-14 md:gap-20 items-start">
         
         {/* About */}
         <div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-6 md:mb-8 leading-tight">
-            GANESHA CERAMICS LLP
-          </h1>
+          {/* Company Logo + Name */}
+          <div className="flex items-center gap-4 mb-6 md:mb-8">
+            <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-amber-500 flex items-center justify-center shadow-lg flex-shrink-0">
+              <span className="text-black text-2xl font-black">AB</span>
+            </div>
+
+            <div>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-tight">
+                AB CONSTRUCTION
+              </h1>
+
+              <p className="text-gray-500 uppercase tracking-[0.25em] text-xs sm:text-sm mt-1">
+                Building Dreams Since 2015
+              </p>
+            </div>
+          </div>
 
           <p className="text-gray-400 leading-7 sm:leading-9 text-sm sm:text-base max-w-lg">
-            Bringing timeless marble elegance and premium sanitary solutions
-            for modern homes, luxury hotels, and commercial spaces.
-            Crafted with quality, precision, and sophisticated design.
+            AB Construction specializes in residential homes, commercial
+            buildings, interior works, architectural planning, and turnkey
+            construction solutions. We are committed to delivering quality
+            craftsmanship, innovative designs, and projects that stand the
+            test of time.
           </p>
 
           {/* Social Icons */}
           <div className="flex gap-4 sm:gap-5 mt-10 md:mt-12">
-            
-            <div className="border border-white/10 rounded-full p-3 sm:p-4 backdrop-blur-sm bg-white/5 hover:bg-white hover:text-black transition-all duration-300 cursor-pointer">
+            <a
+              href="#"
+              className="border border-white/10 rounded-full p-3 sm:p-4 backdrop-blur-sm bg-white/5 hover:bg-white hover:text-black transition-all duration-300"
+            >
               <FaInstagram size={18} />
-            </div>
+            </a>
 
-            <div className="border border-white/10 rounded-full p-3 sm:p-4 hover:bg-white hover:text-black transition-all duration-300 cursor-pointer">
+            <a
+              href="#"
+              className="border border-white/10 rounded-full p-3 sm:p-4 hover:bg-white hover:text-black transition-all duration-300"
+            >
               <FaLinkedinIn size={18} />
-            </div>
+            </a>
 
-            <div className="border border-white/10 rounded-full p-3 sm:p-4 hover:bg-white hover:text-black transition-all duration-300 cursor-pointer">
+            <a
+              href="#"
+              className="border border-white/10 rounded-full p-3 sm:p-4 hover:bg-white hover:text-black transition-all duration-300"
+            >
               <FaYoutube size={18} />
-            </div>
+            </a>
           </div>
 
           {/* Policies */}
@@ -68,45 +71,66 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Address */}
+        {/* Contact */}
         <div>
-          <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase mb-6 md:mb-8">
-            Our Showroom
+          <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold uppercase mb-8">
+            Let's Build Together
           </h3>
 
-          <div className="space-y-4 sm:space-y-5 text-gray-400 leading-7 sm:leading-8 text-sm sm:text-lg">
-            <p>
-              CCV7+G6H Ganesha Ceramic LLP <br />
-              Chuttu, Jharkhand 835217
-            </p>
+          <div className="bg-white/5 border border-white/10 rounded-3xl p-6 sm:p-8 backdrop-blur-md">
+            
+            {/* Consultation */}
+            <div className="mb-8">
+              <p className="text-amber-500 text-xs uppercase tracking-[0.2em] mb-2 font-semibold">
+                Free Consultation
+              </p>
 
-            <p>+91 8866933777</p>
+              <h4 className="text-white text-lg sm:text-xl font-bold">
+                Address
+              </h4>
 
-            <p className="break-all">
-              ganeshashowroom1@gmail.com
-            </p>
+              <p className="text-gray-400 mt-2">
+                123 Main Street, Raxxx, Jharkxxx, India - 834001
+              </p>
+            </div>
+
+            {/* Phone */}
+            <div className="mb-8">
+              <p className="text-amber-500 text-xs uppercase tracking-[0.2em] mb-2 font-semibold">
+                Call Us
+              </p>
+
+              <h4 className="text-white text-xl sm:text-2xl font-bold">
+                +91 XXXXXXXXXX
+              </h4>
+            </div>
+
+            {/* Email */}
+            <div>
+              <p className="text-amber-500 text-xs uppercase tracking-[0.2em] mb-2 font-semibold">
+                Email Us
+              </p>
+
+              <h4 className="text-white text-lg sm:text-xl font-bold break-all">
+                info@abconstruction.com
+              </h4>
+            </div>
           </div>
+
+          {/* CTA Button */}
+          <button className="mt-6 w-full bg-amber-500 text-black font-bold py-4 rounded-2xl hover:bg-amber-400 transition-all duration-300">
+            Get Free Consultation
+          </button>
         </div>
       </div>
 
       {/* Bottom Footer */}
       <div className="border-t border-white/10 mt-16 md:mt-24 pt-8 md:pt-10 flex flex-col md:flex-row items-center justify-between gap-6 text-gray-500 text-xs sm:text-sm text-center md:text-left">
-        
-        <p>© 2026 MarbleX. All rights reserved.</p>
+        <p>© 2026 AB Construction. All rights reserved.</p>
 
-        <div className="flex flex-wrap justify-center gap-5 sm:gap-8 uppercase tracking-[0.1em] sm:tracking-[0.15em]">
-          <p className="cursor-pointer hover:text-white transition-colors">
-            Instagram
-          </p>
-
-          <p className="cursor-pointer hover:text-white transition-colors">
-            LinkedIn
-          </p>
-
-          <p className="cursor-pointer hover:text-white transition-colors">
-            YouTube
-          </p>
-        </div>
+        <p>
+          Designed & Developed with ❤️ by Osiz Technologies Pvt. Ltd.
+        </p>
       </div>
     </footer>
   );

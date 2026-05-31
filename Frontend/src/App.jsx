@@ -4,7 +4,9 @@ import Footer from './components/Footer'
 import ProjectSection from './components/ProjectSection'
 
 import Projects from './components/Projects'
-import Project2 from './components/Project2'
+
+import Services from './components/ServicesSection'
+import Our from './components/Our'
 
 const App = () => {
   return (
@@ -12,7 +14,8 @@ const App = () => {
       <Hero />
       <Projects />
       <ProjectSection />
-      <Project2/>
+      <Services/>
+      <Our/>
       <Footer />
 
     </div>
